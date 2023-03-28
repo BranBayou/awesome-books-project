@@ -114,9 +114,9 @@ to run tests, run the following command
   <li>npx hint .</li>
 </ul>
 
-### Deployment
+<!-- ### Deployment
 
-This page has been deployed with gitbub pages.
+This page has been deployed with gitbub pages. -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -129,8 +129,8 @@ This page has been deployed with gitbub pages.
 - LinkedIn: [Berhanu Baye](https://www.linkedin.com/in/bran-baye/)
 
 👤 Nirere Marie Christelle
-- GitHub: [@BranBayou](https://github.com/Christelle-12)
-- Twitter: [@bran-baye](https://twitter.com/Chr1Nirere)
+- GitHub: [@Christelle-12](https://github.com/Christelle-12)
+- Twitter: [@Chr1Nirere](https://twitter.com/Chr1Nirere)
 
 
 
