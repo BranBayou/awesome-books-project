@@ -59,4 +59,3 @@ function checkLocalStorage() {
 window.addEventListener('DOMContentLoaded', () => {
   showBook();
 });
-
