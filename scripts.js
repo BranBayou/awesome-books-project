@@ -1,10 +1,11 @@
+/* eslint-disable no-use-before-define */
 const title = document.querySelector('.book-title');
 const author = document.querySelector('.book-author');
 const bookList = document.getElementsByClassName('book-list')[0];
 const addBtn = document.getElementsByClassName('add-btn')[0];
 let bookArray = [];
 
-const addBooks = (title, author) => {
+function addBooks(title, author) {
   if (title !== '' && author !== '') {
     const arrayObj = {
       Title: title,
@@ -13,7 +14,7 @@ const addBooks = (title, author) => {
     bookArray.push(arrayObj);
     localStorage.setItem('Books', JSON.stringify(bookArray));
   }
-};
+}
 
 function showBook() {
   checkLocalStorage();
@@ -58,3 +59,4 @@ function checkLocalStorage() {
 window.addEventListener('DOMContentLoaded', () => {
   showBook();
 });
+
