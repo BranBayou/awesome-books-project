@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 const title = document.querySelector('.book-title');
 const author = document.querySelector('.book-author');
 const bookList = document.getElementsByClassName('book-list')[0];
