@@ -47,7 +47,7 @@ class ShowBooks {
             <p>${book.author}</p>
           </div>
           <button class="remove" onclick="ShowBooks.remove(${i})">Remove</button>
-        </div>
+        </div> 
       `;
     });
     bookList.innerHTML = showBook;

@@ -2,6 +2,7 @@ main {
   max-width: 350px;
   margin: 0 auto;
 }
+
 #form {
   display: flex;
   flex-direction: column;
@@ -9,18 +10,24 @@ main {
   align-items: center;
   gap: 10px;
 }
+
 .add-btn {
-  margin-left: 115px;
-  padding: 0 20px;
+  margin-right: 5.5rem;
+  align-self: flex-end;
+  box-shadow: 2px 3px 0 black;
+  background-color: #fff;
 }
+
 .book-list {
   width: 100%;
   border: 2px solid #000;
 }
+
 .book-space {
   display: flex;
   align-items: center;
 }
+
 .book-space:nth-of-type(odd) {
   background-color: rgb(185, 180, 180);
   height: 30px;
@@ -30,6 +37,7 @@ main {
   background-color: #fff;
   height: 30px;
 }
+
 .book-des {
   width: 100%;
   display: flex;
@@ -37,9 +45,23 @@ main {
   gap: 10px;
   margin: 0 10px;
 }
+
 .remove {
   width: auto;
   height: 20px;
   margin: 0 10px;
   box-shadow: 2px 3px 0 black;
+}
+
+.book-title {
+  border: 2px solid black;
+}
+
+.book-author {
+  border: 2px solid black;
+}
+
+hr {
+  width: 7rem;
+  border: 1px solid black;
 }
