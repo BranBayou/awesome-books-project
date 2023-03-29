@@ -27,6 +27,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: rgb(185, 180, 180);
 }
 .remove {
   width: auto;
