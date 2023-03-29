@@ -4,23 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awsome books</title>
+  <title>Awesome books</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
-    <div class="intro">
-      <h1>Awesome books</h1>
-    </div>
-    <div class="book-list"></div>
-    <form id="form" action="">
-      <div class="title">
-        <input class="book-title" type="text" name="title" placeholder="Title" required>
-      </div><br> 
-      <div class="author">
+    <form id="form" class="form" action="">
+        <h1>All awesome books</h1>
+        <div class="book-list"></div> <hr>
+        <h2>Add a new book</h2>
+        <input class="book-title" type="text" name="title" placeholder="Title" required> 
         <input class="book-author" type="text" name="author" placeholder="Author" required>
-      </div><br>
-      <button class="add-btn" id="add-btn" type="button">Add</button><hr>
+        <button class="add-btn" id="add-btn" type="button">Add</button>
     </form>
   </main>
   <script src="scripts.js"></script>
