@@ -15,10 +15,12 @@ main {
 }
 .book-list {
   width: 100%;
+  border: 2px solid #000;
 }
 .book-space {
   display: flex;
   align-items: center;
+  margin: 0 10px;
 }
 .book-des {
   width: 100%;
@@ -29,4 +31,5 @@ main {
 .remove {
   width: auto;
   height: 25px;
+  box-shadow: #000;
 }

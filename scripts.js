@@ -3,6 +3,13 @@ const title = document.querySelector('.book-title');
 const author = document.querySelector('.book-author');
 const bookList = document.getElementsByClassName('book-list')[0];
 const addBtn = document.getElementsByClassName('add-btn')[0];
+
+class BookShelf {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
 let bookArray = [];
 
 function addBooks(title, author) {
