@@ -24,7 +24,6 @@ addBtn.addEventListener('click', (e) => {
 });
 
 class ShowBooks {
-
   static addBooks(title, author) {
     const bookTitle = title;
     const bookAuthor = author;
