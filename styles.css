@@ -20,17 +20,26 @@ main {
 .book-space {
   display: flex;
   align-items: center;
-  margin: 0 10px;
+}
+.book-space:nth-of-type(odd) {
+  background-color: rgb(185, 180, 180);
+  height: 30px;
+}
+
+.book-space:nth-of-type(even) {
+  background-color: #fff;
+  height: 30px;
 }
 .book-des {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: rgb(185, 180, 180);
+  margin: 0 10px;
 }
 .remove {
   width: auto;
-  height: 25px;
-  box-shadow: #000;
+  height: 20px;
+  margin: 0 10px;
+  box-shadow: 2px 3px 0 black;
 }
