@@ -19,9 +19,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
-# 📖 b personal blog website <a name="about-project"></a>
-
-This project is a personal blog website in which I share my technology ideas with my followers in 2023. 
+# 📖 Awesome books project <a name="about-project"></a>
 
 ## HTML+CSS Setup
 
@@ -36,7 +34,6 @@ This project is a personal blog website in which I share my technology ideas wit
   <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>BOOTSTRAP</li>
     <li>JS</li>
   </ul>
 </details>
@@ -52,7 +49,7 @@ This project is a personal blog website in which I share my technology ideas wit
 ## Key Features
 
 - npm packages
-- html, css, bootstrap, and js renders the project
+- html, css, and js renders the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,7 +57,7 @@ This project is a personal blog website in which I share my technology ideas wit
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://branbayou.github.io/capstonePro1-personal-blog/)
+- [Live Demo Link](https://github.com/BranBayou/awsome-books-project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +86,7 @@ Clone this repository to your desired folder: git@github.com:BranBayou/capstoneP
 ### Install
 
 1. Clone the repo:
-  https://github.com/BranBayou/capstonePro1-personal-blog
+  https://github.com/BranBayou/awsome-books-project
 2. Install npm packages:
   npm.install
 
@@ -149,7 +146,7 @@ This page has been deployed with gitbub pages. -->
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BranBayou/capstonePro1-personal-blog/issues).
+Feel free to check the [issues page](https://github.com/BranBayou/awsome-books-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,8 +162,7 @@ If you like this project to give a positive feedback and comments that will go a
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse for this exercise and also pass my gratitude to Cindy Shin for designing the template and make it available for use. 
-
+I would like to thank Microverse for this exercise.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
