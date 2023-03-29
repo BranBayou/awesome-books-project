@@ -21,10 +21,13 @@ function showBook() {
   let showBook = '';
   bookArray.forEach((book, i) => {
     showBook += `
-      <div>
-        <p>${book.Title}</p>
-        <p>${book.Author}</p>
-        <button class = "remove" onclick = "remove(${i})">Remove</button>
+      <div class="book-space">
+        <div class="book-des">
+          <p>"${book.Title}"</p>
+          <p>by</p>
+          <p>${book.Author}</p>
+        </div>
+        <button class="remove" onclick = "remove(${i})">Remove</button>
       </div>
     `;
   });
