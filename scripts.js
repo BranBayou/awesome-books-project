@@ -10,62 +10,68 @@ class BookShelf {
     this.author = author;
   }
 }
+
 let bookArray = [];
-
-function addBooks(title, author) {
-  if (title !== '' && author !== '') {
-    const arrayObj = {
-      Title: title,
-      Author: author,
-    };
-    bookArray.push(arrayObj);
-    localStorage.setItem('Books', JSON.stringify(bookArray));
-  }
-}
-
-function showBook() {
-  checkLocalStorage();
-  let showBook = '';
-  bookArray.forEach((book, i) => {
-    showBook += `
-      <div class="book-space">
-        <div class="book-des">
-          <p>"${book.Title}"</p>
-          <p>by</p>
-          <p>${book.Author}</p>
-        </div>
-        <button class="remove" onclick = "remove(${i})">Remove</button>
-      </div>
-    `;
-  });
-  bookList.innerHTML = showBook;
-}
 
 addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const title = document.querySelector('.book-title').value.trim();
   const author = document.querySelector('.book-author').value.trim();
-  addBooks(title, author);
-  showBook();
+  ShowBooks.addBooks(title, author);
+  ShowBooks.showBook();
   title.value = '';
   author.value = '';
 });
 
-const remove = (id) => {
-  const bookIndex = bookArray.findIndex((item, i) => id === i);
-  bookArray.splice(bookIndex, 1);
-  localStorage.setItem('Books', JSON.stringify(bookArray));
-  showBook();
-};
+class ShowBooks {
 
-function checkLocalStorage() {
-  if (localStorage.getItem('Books') == null) {
-    bookArray = [];
-  } else {
-    bookArray = JSON.parse(localStorage.getItem('Books'));
+  static addBooks = (title, author) => {
+    const bookTitle = title.value;
+    const bookAuthor = author.value;
+    if (bookTitle !== '' && bookAuthor !== '') {
+      const arrayObj = new BookShelf(bookTitle, bookAuthor);
+      const books = ShowBooks.checkLocalStorage();
+      bookArray.push(arrayObj);
+      localStorage.setItem('Books', JSON.stringify(bookArray));
+    }
   }
+
+  static showBook() {
+    const books = ShowBooks.checkLocalStorage();
+    let showBook = '';
+    bookArray.forEach((book, i) => {
+      showBook += `
+        <div class="book-space">
+          <div class="book-des">
+            <p>"${book.Title}"</p>
+            <p>by</p>
+            <p>${book.Author}</p>
+          </div>
+          <button class="remove" onclick = "remove(${i})">Remove</button>
+        </div>
+      `;
+    });
+    bookList.innerHTML = showBook;
+  }
+
+  static checkLocalStorage() {
+    if (localStorage.getItem('Books') == null) {
+      bookArray = [];
+    } else {
+      bookArray = JSON.parse(localStorage.getItem('Books'));
+    }
+    return bookArray;
+  }
+
+  static remove = (selector) => {
+    const bookIndex = bookArray.findIndex((item, i) => selector === i);
+    bookArray.splice(bookIndex, 1);
+    localStorage.setItem('Books', JSON.stringify(bookArray));
+    ShowBooks.showBook();
+  };
 }
 
+
 window.addEventListener('DOMContentLoaded', () => {
-  showBook();
+  ShowBooks();
 });
