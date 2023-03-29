@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 const titleInput = document.querySelector('.book-title');
 const authorInput = document.querySelector('.book-author');
 const bookList = document.querySelector('.book-list');
@@ -12,16 +11,6 @@ class BookShelf {
 }
 
 let bookArray = [];
-
-addBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const title = titleInput.value.trim();
-  const author = authorInput.value.trim();
-  ShowBooks.addBooks(title, author);
-  ShowBooks.showBook();
-  titleInput.value = '';
-  authorInput.value = '';
-});
 
 class ShowBooks {
   static addBooks(title, author) {
@@ -68,6 +57,16 @@ class ShowBooks {
     ShowBooks.showBook();
   }
 }
+
+addBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const title = titleInput.value.trim();
+  const author = authorInput.value.trim();
+  ShowBooks.addBooks(title, author);
+  ShowBooks.showBook();
+  titleInput.value = '';
+  authorInput.value = '';
+});
 
 window.addEventListener('DOMContentLoaded', () => {
   ShowBooks.showBook();
