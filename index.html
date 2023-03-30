@@ -8,16 +8,40 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <form id="form" class="form" action="">
-        <h1>All awesome books</h1>
-        <div class="book-list"></div> <hr>
-        <h2>Add a new book</h2>
-        <input class="book-title" type="text" name="title" placeholder="Title" required> 
-        <input class="book-author" type="text" name="author" placeholder="Author" required>
-        <button class="add-btn" id="add-btn" type="button">Add</button>
-    </form>
-  </main>
+  <header>
+    <p>Awesome books</p>
+    <ul>
+      <li><a class="list-link" href="#">List</a></li>
+      <li><a class="add-new-link" href="#">Add new</a></li>
+      <li><a class="contact-link" href="#">Contact</a></li>
+    </ul>
+  </header>
+  <div class="date-time"></div>
+  <section class="content-contianer">
+    <section class="list list-con disapear">
+      <h1>All awesome books</h1>
+      <div class="book-list"></div>
+    </section>
+    <main class="form-con disapear">
+      <form id="form" class="form" action="">
+          <h2>Add a new book</h2>
+          <input class="book-title" type="text" name="title" placeholder="Title" required> 
+          <input class="book-author" type="text" name="author" placeholder="Author" required>
+          <button class="add-btn" id="add-btn" type="button">Add</button>
+      </form>
+    </main>
+    <section class="contact-con contact disapear">
+      <h2>Contact information</h2>
+      <p>Do you have any questions or you just want to say "Hellp"?</p>
+      <p>You can reach out to us!</p>
+      <li>Our e-mail: mail@gmail.com</li>
+      <li>Out phone: 004335865334422</li>
+      <li>Our address: Streetname 22,84503, City, Country</li>
+    </section>
+  </section>
+  <footer>
+    <p>Copyright...</p>
+  </footer>
   <script src="scripts.js"></script>
 </body>
 </html>
