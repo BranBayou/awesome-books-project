@@ -15,14 +15,17 @@ header {
   height: 8vh;
   padding: 0 20px;
 }
-header p {
+header p a{
   font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  
 }
 ul {
   display: flex;
   gap: 20px;
 }
-li {
+header ul li {
   list-style: none;
 }
 li a {
@@ -42,6 +45,13 @@ li a {
   margin: 24px;
   font-size: 32px;
 }
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 5rem;
+  gap: 0.5rem;
+}
 main {
   max-width: 50%;
   margin: 0 auto;
@@ -60,10 +70,12 @@ main {
   font-size: 32px;
 }
 .contact {
-  text-align: center;
-  max-width: 75%;
-  margin: 0 auto;
-  height: auto;
+  padding: 1rem;
+
+}
+.contact p {
+  padding: 1rem;
+  line-height: 1.5rem;
 }
 
 .contact h2 {
