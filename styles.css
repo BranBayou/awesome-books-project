@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   max-width: 768px;
-  margin: 10px auto;
+  margin: 5px auto;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -15,36 +17,47 @@ header {
   height: 8vh;
   padding: 0 20px;
 }
-header p a{
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-  
-}
-ul {
-  display: flex;
-  gap: 20px;
-}
-header ul li {
-  list-style: none;
-}
+
 li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  font-size: 18px;
 }
+
+header p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  list-style: none;
+  border-right: 2px solid #000;
+  padding-right: 10px;
+}
+
 .content-contianer {
   height: 80vh;
 }
-.list{
+
+.list {
   max-width: 100%;
   height: auto;
   text-align: center;
 }
+
 .list h1 {
   margin: 24px;
   font-size: 32px;
 }
+
 .ul-list {
   display: flex;
   flex-direction: column;
@@ -52,11 +65,13 @@ li a {
   padding-left: 5rem;
   gap: 0.5rem;
 }
+
 main {
   max-width: 50%;
   margin: 0 auto;
   height: auto;
 }
+
 #form {
   display: flex;
   flex-direction: column;
@@ -65,23 +80,32 @@ main {
   gap: 20px;
 }
 
+.contact h2 {
+  margin: 24px;
+  font-size: 32px;
+}
+
 #form h2 {
   margin: 24px;
   font-size: 32px;
 }
+
 .contact {
   padding: 1rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+footer p {
+  font-weight: bold;
+}
+
 .contact p {
   padding: 1rem;
   line-height: 1.5rem;
 }
 
-.contact h2 {
-  margin: 24px;
-  font-size: 32px;
-}
 .add-btn {
   width: 70px;
   height: 2rem;
@@ -145,9 +169,7 @@ footer {
   height: 8vh;
   padding: 0 20px;
 }
-footer p {
-  font-weight: bold;
-}
+
 .disapear {
   display: none;
 }
